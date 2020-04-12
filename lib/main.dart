@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spyfall/view_player_role.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
 
     void startGame() {
-      print("Game has started!");
+      Navigator.push(context, MaterialPageRoute(builder: (context) => ViewPlayerRole()));
     }
 
     return Scaffold(
