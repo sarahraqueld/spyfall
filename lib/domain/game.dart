@@ -8,6 +8,6 @@ class Game {
   }
 
   void createPlayers() {
-    [0, 1, 2, 4].forEach((id) => players.add(new Player(id)));
+    [0, 1, 2, 4].forEach((id) => players.add(new Player(id, 'Player')));
   }
 }

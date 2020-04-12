@@ -1,7 +1,9 @@
 class Player {
   int id;
+  String role;
 
-  Player(id) {
+  Player(id, role) {
     this.id = id;
+    this.role = role;
   }
 }
