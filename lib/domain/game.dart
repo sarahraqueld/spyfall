@@ -1,13 +1,17 @@
 import 'package:spyfall/domain/player.dart';
 
 class Game {
-  List<Player> players = [];
+  List<Player> _players = [];
 
-  void start() {
+  Game() {
     createPlayers();
   }
 
+  List<Player> get players {
+    return _players;
+  }
+
   void createPlayers() {
-    [0, 1, 2, 4].forEach((id) => players.add(new Player(id, 'Player')));
+    [1, 2, 3, 4].forEach((id) => _players.add(new Player(id, 'Player')));
   }
 }
